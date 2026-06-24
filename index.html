@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Singularity Spin</title>
+    <style>
+        :root {
+            --neon-blue: #00f0ff;
+            --neon-pink: #ff007f;
+            --neon-gold: #ffd700;
+            --bg-color: #0a0c16;
+            --card-bg: rgba(15, 18, 36, 0.7);
+            --text-color: #ffffff;
+            --text-muted: rgba(255, 255, 255, 0.6);
+            --border-color: rgba(255, 255, 255, 0.08);
+        }
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            margin: 0;
+            padding: 40px 20px;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 900;
+            color: var(--neon-blue);
+            text-shadow: 0 0 10px rgba(0, 240, 255, 0.3);
+            margin: 0 0 10px 0;
+            letter-spacing: 2px;
+        }
+        .subtitle {
+            color: var(--neon-pink);
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+        .lang-switcher {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .btn-lang {
+            background: transparent;
+            border: 1px solid var(--neon-blue);
+            color: var(--neon-blue);
+            padding: 8px 16px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        .btn-lang.active, .btn-lang:hover {
+            background: var(--neon-blue);
+            color: #000;
+            box-shadow: 0 0 15px rgba(0, 240, 255, 0.4);
+        }
+        .card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(10px);
+            margin-bottom: 30px;
+        }
+        h2 {
+            color: var(--neon-gold);
+            font-size: 1.5rem;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 10px;
+            margin-top: 30px;
+        }
+        h3 {
+            color: var(--neon-blue);
+            font-size: 1.1rem;
+        }
+        p, li {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        a {
+            color: var(--neon-blue);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        a:hover {
+            color: var(--neon-pink);
+            text-shadow: 0 0 5px rgba(255, 0, 127, 0.5);
+        }
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+        .lang-section {
+            display: none;
+        }
+        .lang-section.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>SINGULARITY SPIN</h1>
+            <div class="subtitle">PRIVACY POLICY</div>
+            <div class="lang-switcher">
+                <button class="btn-lang active" onclick="switchLang('ja')">日本語</button>
+                <button class="btn-lang" onclick="switchLang('en')">English</button>
+            </div>
+        </header>
+
+        <div class="card">
+            <!-- 日本語セクション -->
+            <div id="lang-ja" class="lang-section active">
+                <h2>プライバシーポリシー</h2>
+                <p>jp.tpp.t9s（以下、「当開発者」といいます）は、モバイルアプリケーション「Singularity Spin」（以下、「本アプリ」といいます）におけるユーザーの情報の取り扱いについて、以下のとおりプライバシーポリシーを定めます。</p>
+
+                <h3>1. 収集する情報および収集方法</h3>
+                <p>本アプリでは、以下のサードパーティ製SDKを利用しており、それぞれの提供元が自動的にユーザーの情報を収集する場合があります。収集される情報には、個人を特定する情報は含まれません。</p>
+                <ul>
+                    <li>
+                        <strong>Google Play Games Services</strong><br>
+                        収集目的: ワールドランキング（リーダーボード）への登録、実績の解除、およびゲーム進捗の保存<br>
+                        収集データ: 匿名ユーザーID、ゲームの進行状況、スコア、実績データ
+                    </li>
+                    <li>
+                        <strong>Google AdMob</strong><br>
+                        収集目的: アプリ内広告の配信および最適化<br>
+                        収集データ: 広告識別子（AdID）、端末モデル、OSバージョン、IPアドレス等の非個人情報
+                    </li>
+                </ul>
+
+                <h3>2. 収集情報の利用目的</h3>
+                <p>収集された情報は、ゲーム体験の向上（ランキング表示やゲームの進行状況の保存）および広告の提供にのみ利用され、それ以外の目的には使用されません。</p>
+
+                <h3>3. 個人情報の第三者提供</h3>
+                <p>当開発者は、法令に基づく場合を除き、ユーザーの同意を得ることなく、収集した情報を第三者に提供することはありません。</p>
+
+                <h3>4. サードパーティポリシー</h3>
+                <p>本アプリで使用しているサードパーティのプライバシーポリシーについては、以下のリンクからご確認ください。</p>
+                <ul>
+                    <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Play 開発者サービス (Google Play Services)</a></li>
+                    <li><a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener noreferrer">Google AdMob</a></li>
+                </ul>
+
+                <h3>5. 免責事項</h3>
+                <p>本アプリの利用によって生じた損害や不利益について、当開発者は一切の責任を負いません。</p>
+
+                <h3>6. プライバシーポリシーの変更</h3>
+                <p>当開発者は、本プライバシーポリシーを必要に応じて変更することがあります。変更されたポリシーは、本ページに掲載された時点で有効になります。</p>
+
+                <h3>7. お問い合わせ</h3>
+                <p>本ポリシーに関するお問い合わせは、アプリストアの開発者連絡先までお願いいたします。</p>
+            </div>
+
+            <!-- 英語セクション -->
+            <div id="lang-en" class="lang-section">
+                <h2>Privacy Policy</h2>
+                <p>jp.tpp.t9s (hereinafter referred to as "the Developer") establishes this Privacy Policy regarding the handling of users' information in the mobile application "Singularity Spin" (hereinafter referred to as "the App").</p>
+
+                <h3>1. Information Collected and Collection Method</h3>
+                <p>The App utilizes third-party SDKs, which may automatically collect information from users. The collected information does not contain any personally identifiable information.</p>
+                <ul>
+                    <li>
+                        <strong>Google Play Games Services</strong><br>
+                        Purpose: Registration for world rankings (leaderboards), unlocking achievements, and saving game progress.<br>
+                        Data Collected: Anonymous User ID, game progress, score, and achievement data.
+                    </li>
+                    <li>
+                        <strong>Google AdMob</strong><br>
+                        Purpose: Delivery and optimization of in-app advertisements.<br>
+                        Data Collected: Advertising Identifier (AdID), device model, OS version, IP address, and other non-personal information.
+                    </li>
+                </ul>
+
+                <h3>2. Purpose of Use</h3>
+                <p>The collected information is used solely to enhance the gaming experience (displaying rankings, saving game progress) and delivering appropriate advertisements.</p>
+
+                <h3>3. Disclosure to Third Parties</h3>
+                <p>The Developer will not disclose the collected information to third parties without the user's consent, except as required by law.</p>
+
+                <h3>4. Third-Party Privacy Policies</h3>
+                <p>For more information about the privacy policies of the third-party services used in the App, please visit the following links:</p>
+                <ul>
+                    <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Play Services</a></li>
+                    <li><a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener noreferrer">Google AdMob</a></li>
+                </ul>
+
+                <h3>5. Disclaimer</h3>
+                <p>The Developer shall not be held liable for any damages or disadvantages arising from the use of this App.</p>
+
+                <h3>6. Changes to this Privacy Policy</h3>
+                <p>The Developer may update this Privacy Policy from time to time. The updated policy becomes effective immediately upon publication on this page.</p>
+
+                <h3>7. Contact Information</h3>
+                <p>For any inquiries regarding this policy, please contact us via the developer contact information listed on the app store.</p>
+            </div>
+        </div>
+
+        <footer>
+            &copy; 2026 jp.tpp.t9s. All rights reserved.
+        </footer>
+    </div>
+
+    <script>
+        function switchLang(lang) {
+            document.querySelectorAll('.lang-section').forEach(el => el.classList.remove('active'));
+            document.querySelectorAll('.btn-lang').forEach(el => el.classList.remove('active'));
+            
+            document.getElementById('lang-' + lang).classList.add('active');
+            // Use event.currentTarget or event.target, but let's make it robust
+            const btn = document.querySelector('.btn-lang[onclick*="' + lang + '"]');
+            if (btn) btn.classList.add('active');
+        }
+    </script>
+</body>
+</html>
